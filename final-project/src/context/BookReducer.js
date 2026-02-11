@@ -1,6 +1,6 @@
 export const bookReducer = (state, action) => {
     switch(action.type){
-        case 'SET_BOOK':
+        case 'SET_BOOKS':
             return {...state, books: action.payload}
         case 'ADD_BOOK':
             return {...state, books: [...state.books, action.payload]}
